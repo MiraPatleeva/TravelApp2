@@ -1,0 +1,45 @@
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: #b5e2fa;
+}
+
+.table>:not(thead)>*>* {
+  
+    background-color: #73d2de !important;
+   
+}
+.table>thead>*>*{
+    background-color: #489fb5 !important;
+}
+
+.table{
+    height:25%;
+}
+
+.buttons{
+    background-color:489fb5;
+    --bs-btn-hover-bg: 73d2de !important;
+}
+#btnedit,#btndelete{
+    width:90%;
+}
+#btndelete{
+    text-align: center;
+}
+
+.addformcontrols{
+    margin-bottom: 3%;
+  
+}
+.back{
+     background-color: #b5e2fa;
+}
+#headerlogin{
+   
+    --bs-alert-color: black !important;
+    --bs-alert-bg:489fb5 !important ;
+
+}
+#login{
+    margin-top:3%;
+}

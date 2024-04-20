@@ -1,0 +1,36 @@
+html
+
+   head
+
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN", crossorigin="anonymous")
+
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js", integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+", crossorigin="anonymous")
+
+        link(rel='stylesheet', href='/styles.css')
+   body
+
+      if info
+
+         h1.alert.text-center(id="headerlogin")=info
+
+      if warn
+
+         h1.alert.alert-warning #{warn}
+
+      form.mx-auto.border.border-primary.w-25.p-3(method="post")
+
+         div.form-group
+
+            label Username:
+
+            input.form-control(type="text" name="username" placeholder=" Enter user name " value="mirapatleeva@students.ue-varna.bg")
+
+         div.form-group
+
+            label Password:
+
+            input.form-control(type="password" name="password" value="12345678")
+
+         div.form-group
+
+            input.btn( class="buttons" id="login" type="submit" value="LOGIN")
